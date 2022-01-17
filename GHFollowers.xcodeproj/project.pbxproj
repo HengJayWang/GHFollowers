@@ -13,6 +13,10 @@
 		F1D22D49279172EC009092AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D22D47279172EC009092AB /* LaunchScreen.storyboard */; };
 		F1D22D5127917CFF009092AB /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D5027917CFF009092AB /* SearchVC.swift */; };
 		F1D22D5327917D47009092AB /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D5227917D47009092AB /* FavoritesListVC.swift */; };
+		F1D22D552795183D009092AB /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D542795183D009092AB /* GFButton.swift */; };
+		F1D22D5727951BF3009092AB /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D5627951BF3009092AB /* GFTextField.swift */; };
+		F1D22D5927953D1E009092AB /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D5827953D1E009092AB /* FollowerListVC.swift */; };
+		F1D22D5B2795430D009092AB /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D5A2795430D009092AB /* StringExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F1D22D4A279172EC009092AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1D22D5027917CFF009092AB /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		F1D22D5227917D47009092AB /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		F1D22D542795183D009092AB /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		F1D22D5627951BF3009092AB /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		F1D22D5827953D1E009092AB /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		F1D22D5A2795430D009092AB /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +67,11 @@
 				F1D22D3C279172EB009092AB /* AppDelegate.swift */,
 				F1D22D3E279172EB009092AB /* SceneDelegate.swift */,
 				F1D22D5027917CFF009092AB /* SearchVC.swift */,
+				F1D22D542795183D009092AB /* GFButton.swift */,
+				F1D22D5627951BF3009092AB /* GFTextField.swift */,
+				F1D22D5827953D1E009092AB /* FollowerListVC.swift */,
 				F1D22D5227917D47009092AB /* FavoritesListVC.swift */,
+				F1D22D5A2795430D009092AB /* StringExt.swift */,
 				F1D22D45279172EC009092AB /* Assets.xcassets */,
 				F1D22D47279172EC009092AB /* LaunchScreen.storyboard */,
 				F1D22D4A279172EC009092AB /* Info.plist */,
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1D22D5727951BF3009092AB /* GFTextField.swift in Sources */,
 				F1D22D5327917D47009092AB /* FavoritesListVC.swift in Sources */,
+				F1D22D5B2795430D009092AB /* StringExt.swift in Sources */,
+				F1D22D552795183D009092AB /* GFButton.swift in Sources */,
 				F1D22D5127917CFF009092AB /* SearchVC.swift in Sources */,
+				F1D22D5927953D1E009092AB /* FollowerListVC.swift in Sources */,
 				F1D22D3D279172EB009092AB /* AppDelegate.swift in Sources */,
 				F1D22D3F279172EB009092AB /* SceneDelegate.swift in Sources */,
 			);
