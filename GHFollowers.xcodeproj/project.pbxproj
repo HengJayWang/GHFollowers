@@ -24,7 +24,7 @@
 		F1D22D6B279566FE009092AB /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D6A279566FE009092AB /* Follower.swift */; };
 		F1D22D6D279567D8009092AB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D6C279567D8009092AB /* User.swift */; };
 		F1D22D70279691AF009092AB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D6F279691AF009092AB /* NetworkManager.swift */; };
-		F1D22D732796AF8D009092AB /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D722796AF8D009092AB /* ErrorMessage.swift */; };
+		F1D22D732796AF8D009092AB /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D722796AF8D009092AB /* GFError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 		F1D22D6A279566FE009092AB /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		F1D22D6C279567D8009092AB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F1D22D6F279691AF009092AB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		F1D22D722796AF8D009092AB /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		F1D22D722796AF8D009092AB /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +82,7 @@
 			children = (
 				F1D22D6E2796918C009092AB /* Managers */,
 				F1D22D69279566E5009092AB /* Model */,
+				F1D22D6627955B7D009092AB /* Extension */,
 				F1D22D6527955B72009092AB /* Utilities */,
 				F1D22D6727955B90009092AB /* Custom Views */,
 				F1D22D6427955B17009092AB /* Screens */,
@@ -104,8 +105,7 @@
 		F1D22D6527955B72009092AB /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				F1D22D6627955B7D009092AB /* Extension */,
-				F1D22D722796AF8D009092AB /* ErrorMessage.swift */,
+				F1D22D722796AF8D009092AB /* GFError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 				F1D22D5D27954982009092AB /* GFTitleLabel.swift in Sources */,
 				F1D22D6327955626009092AB /* UIVoewControllerExt.swift in Sources */,
 				F1D22D3D279172EB009092AB /* AppDelegate.swift in Sources */,
-				F1D22D732796AF8D009092AB /* ErrorMessage.swift in Sources */,
+				F1D22D732796AF8D009092AB /* GFError.swift in Sources */,
 				F1D22D70279691AF009092AB /* NetworkManager.swift in Sources */,
 				F1D22D3F279172EB009092AB /* SceneDelegate.swift in Sources */,
 				F1D22D5F27954B19009092AB /* GFBodyLabel.swift in Sources */,
