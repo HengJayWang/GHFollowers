@@ -28,6 +28,7 @@
 		F1D22D762797B318009092AB /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D752797B318009092AB /* FollowerCell.swift */; };
 		F1D22D782797B3A6009092AB /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D772797B3A6009092AB /* GFAvatarImageView.swift */; };
 		F1D22D7A2797F54F009092AB /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D792797F54F009092AB /* UIHelper.swift */; };
+		F1D22D8227981C18009092AB /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D8127981C18009092AB /* GFEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		F1D22D752797B318009092AB /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		F1D22D772797B3A6009092AB /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		F1D22D792797F54F009092AB /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		F1D22D8127981C18009092AB /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,13 +131,13 @@
 		F1D22D6727955B90009092AB /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				F1D22D7B27981B54009092AB /* Views */,
+				F1D22D8027981BBA009092AB /* ImageViews */,
+				F1D22D7F27981B9B009092AB /* Labels */,
+				F1D22D7E27981B75009092AB /* ViewConrollers */,
+				F1D22D7D27981B65009092AB /* TextFields */,
+				F1D22D7C27981B5B009092AB /* Buttons */,
 				F1D22D742797B2EA009092AB /* Cells */,
-				F1D22D6027954BD2009092AB /* GFAlertVC.swift */,
-				F1D22D542795183D009092AB /* GFButton.swift */,
-				F1D22D5627951BF3009092AB /* GFTextField.swift */,
-				F1D22D5C27954982009092AB /* GFTitleLabel.swift */,
-				F1D22D5E27954B19009092AB /* GFBodyLabel.swift */,
-				F1D22D772797B3A6009092AB /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -174,6 +176,55 @@
 				F1D22D752797B318009092AB /* FollowerCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		F1D22D7B27981B54009092AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1D22D8127981C18009092AB /* GFEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1D22D7C27981B5B009092AB /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F1D22D542795183D009092AB /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F1D22D7D27981B65009092AB /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				F1D22D5627951BF3009092AB /* GFTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		F1D22D7E27981B75009092AB /* ViewConrollers */ = {
+			isa = PBXGroup;
+			children = (
+				F1D22D6027954BD2009092AB /* GFAlertVC.swift */,
+			);
+			path = ViewConrollers;
+			sourceTree = "<group>";
+		};
+		F1D22D7F27981B9B009092AB /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				F1D22D5C27954982009092AB /* GFTitleLabel.swift */,
+				F1D22D5E27954B19009092AB /* GFBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		F1D22D8027981BBA009092AB /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				F1D22D772797B3A6009092AB /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +302,7 @@
 				F1D22D5B2795430D009092AB /* StringExt.swift in Sources */,
 				F1D22D552795183D009092AB /* GFButton.swift in Sources */,
 				F1D22D5127917CFF009092AB /* SearchVC.swift in Sources */,
+				F1D22D8227981C18009092AB /* GFEmptyStateView.swift in Sources */,
 				F1D22D6127954BD2009092AB /* GFAlertVC.swift in Sources */,
 				F1D22D6D279567D8009092AB /* User.swift in Sources */,
 				F1D22D762797B318009092AB /* FollowerCell.swift in Sources */,
