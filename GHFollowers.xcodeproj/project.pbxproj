@@ -29,6 +29,7 @@
 		F1D22D782797B3A6009092AB /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D772797B3A6009092AB /* GFAvatarImageView.swift */; };
 		F1D22D7A2797F54F009092AB /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D792797F54F009092AB /* UIHelper.swift */; };
 		F1D22D8227981C18009092AB /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D8127981C18009092AB /* GFEmptyStateView.swift */; };
+		F1D22D8427994CF5009092AB /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D22D8327994CF5009092AB /* UserInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		F1D22D772797B3A6009092AB /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		F1D22D792797F54F009092AB /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		F1D22D8127981C18009092AB /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
+		F1D22D8327994CF5009092AB /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				F1D22D5027917CFF009092AB /* SearchVC.swift */,
 				F1D22D5827953D1E009092AB /* FollowerListVC.swift */,
 				F1D22D5227917D47009092AB /* FavoritesListVC.swift */,
+				F1D22D8327994CF5009092AB /* UserInfoVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				F1D22D762797B318009092AB /* FollowerCell.swift in Sources */,
 				F1D22D782797B3A6009092AB /* GFAvatarImageView.swift in Sources */,
 				F1D22D5927953D1E009092AB /* FollowerListVC.swift in Sources */,
+				F1D22D8427994CF5009092AB /* UserInfoVC.swift in Sources */,
 				F1D22D6B279566FE009092AB /* Follower.swift in Sources */,
 				F1D22D5D27954982009092AB /* GFTitleLabel.swift in Sources */,
 				F1D22D6327955626009092AB /* UIVoewControllerExt.swift in Sources */,
