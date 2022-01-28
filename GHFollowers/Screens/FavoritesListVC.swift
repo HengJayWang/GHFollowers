@@ -51,21 +51,25 @@ class FavoritesListVC: GFDataLoadingVC {
             guard let self = self else { return }
             switch result {
             case .success(let favorites):
-                if favorites.isEmpty {
-                    self.showEmptyStateView(with: "No Favorites?\nAdd one on the follower screen.", in: self.view)
-                } else {
-                    self.favorites = favorites
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                        self.view.bringSubviewToFront(self.tableView)
-                    }
-                }
+                self.updateUI(with: favorites)
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Get favorites data fail!", message: error.localizedDescription, buttonTitle: "Ok")
             }
         }
     }
     
+    
+    func updateUI(with favorites:[Follower]) {
+        if favorites.isEmpty {
+            self.showEmptyStateView(with: "No Favorites?\nAdd one on the follower screen.", in: self.view)
+        } else {
+            self.favorites = favorites
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.view.bringSubviewToFront(self.tableView)
+            }
+        }
+    }
 }
 
 
@@ -105,5 +109,4 @@ extension FavoritesListVC: UITableViewDataSource, UITableViewDelegate {
             self.presentGFAlertOnMainThread(title: "Unable to remove ⛔️", message: error.localizedDescription, buttonTitle: "Ok")
         }
     }
-    
 }

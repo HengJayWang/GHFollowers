@@ -18,10 +18,12 @@ extension String {
         return dateFormatter.date(from: self)
     }
     
+    
     func convertToDisplayFormat() -> String {
         guard let date = self.convertToDate() else { return "N/A" }
         return date.convertToMonthYearFormat()
     }
+    
     
     var isValidEmail: Bool {
         let emailFormat         = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"

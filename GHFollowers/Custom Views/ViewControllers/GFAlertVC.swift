@@ -28,6 +28,7 @@ class GFAlertVC: UIViewController {
         self.buttonTitle    = buttonTitle
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -53,6 +54,7 @@ class GFAlertVC: UIViewController {
         ])
     }
     
+    
     func configureTitleLabel() {
         titleLabel.text = alertTitle ?? "Something went wrong"
         
@@ -63,6 +65,7 @@ class GFAlertVC: UIViewController {
             titleLabel.heightAnchor.constraint(equalToConstant: 28)
         ])
     }
+    
     
     func configureActionButton() {
         actionButton.setTitle(buttonTitle ?? "Ok", for: .normal)
@@ -76,6 +79,7 @@ class GFAlertVC: UIViewController {
         ])
     }
     
+    
     func configureMessageLabel() {
         messageLabel.text           = message ?? "Unable to complete request"
         messageLabel.numberOfLines  = 4
@@ -88,8 +92,8 @@ class GFAlertVC: UIViewController {
         ])
     }
     
+    
     @objc func dismissVC() {
         dismiss(animated: true)
     }
-
 }

@@ -12,7 +12,6 @@ protocol UserInfoVCDelegate: AnyObject {
     func didRequestFollowers(for username: String)
 }
 
-
 class UserInfoVC: GFDataLoadingVC {
     
     let scrollView          = UIScrollView()
@@ -28,6 +27,7 @@ class UserInfoVC: GFDataLoadingVC {
     var user: User!
     weak var delegate: UserInfoVCDelegate!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
@@ -111,6 +111,7 @@ class UserInfoVC: GFDataLoadingVC {
         ])
     }
     
+    
     func add(childVC: UIViewController, to containerView: UIView) {
         addChild(childVC)
         containerView.addSubview(childVC.view)
@@ -118,10 +119,10 @@ class UserInfoVC: GFDataLoadingVC {
         childVC.didMove(toParent: self)
     }
     
+    
     @objc func dismissVC() {
         dismiss(animated: true)
     }
-
 }
 
 
