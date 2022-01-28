@@ -29,7 +29,7 @@ class GFUserInfoHeaderVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addSubview()
+        addSubviews()
         layoutUI()
         configureUIElements()
     }
@@ -53,13 +53,9 @@ class GFUserInfoHeaderVC: UIViewController {
         }
     }
     
-    func addSubview() {
-        view.addSubview(avatarImageView)
-        view.addSubview(usernameLabel)
-        view.addSubview(nameLabel)
-        view.addSubview(locationImageView)
-        view.addSubview(locationLabel)
-        view.addSubview(bioLabel)
+    func addSubviews() {
+        view.addSubviews(avatarImageView, usernameLabel, nameLabel,
+                         locationImageView, locationLabel, bioLabel)
     }
     
     func layoutUI() {
@@ -96,7 +92,7 @@ class GFUserInfoHeaderVC: UIViewController {
             bioLabel.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: textImagePadding),
             bioLabel.leadingAnchor.constraint(equalTo: avatarImageView.leadingAnchor),
             bioLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bioLabel.heightAnchor.constraint(equalToConstant: 60)
+            bioLabel.heightAnchor.constraint(equalToConstant: 90)
         ])
     }
     
