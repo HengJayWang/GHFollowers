@@ -58,16 +58,30 @@ class UserInfoVC: GFDataLoadingVC {
     
     
     func getUserInfo() {
-        NetworkManager.shared.getUserInfo(for: follower.login) { [weak self] result in
-            guard let self = self else { return }
-            
-            switch result {
-            case .success(let user):
-                DispatchQueue.main.async { self.configureUIElements(with: user) }
-            case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Something wrong", message: error.rawValue, buttonTitle: "Ok")
+        Task {
+            do {
+                let user = try await NetworkManager.shared.getUserInfo(for: follower.login)
+                configureUIElements(with: user)
+            } catch {
+                // handle errors
+                if let gfError = error as? GFError {
+                    presentGFAlert(title: "Some Error Happend", message: gfError.rawValue, buttonTitle: "Ok")
+                } else {
+                    presentDefaultError()
+                }
             }
         }
+//
+//        NetworkManager.shared.getUserInfo(for: follower.login) { [weak self] result in
+//            guard let self = self else { return }
+//
+//            switch result {
+//            case .success(let user):
+//                DispatchQueue.main.async { self.configureUIElements(with: user) }
+//            case .failure(let error):
+//                self.presentGFAlert(title: "Something wrong", message: error.rawValue, buttonTitle: "Ok")
+//            }
+//        }
     }
     
     
@@ -130,7 +144,7 @@ extension UserInfoVC: GFRepoItemVCDelegate {
     func didTapGitHubProfile() {
         // Show safari view controller
         guard let url = URL(string: user.htmlUrl) else {
-            presentGFAlertOnMainThread(title: "Invalid URL",
+            presentGFAlert(title: "Invalid URL",
                                        message: "The url attached to this user is invalid.",
                                        buttonTitle: "Ok")
             return
@@ -143,9 +157,9 @@ extension UserInfoVC: GFRepoItemVCDelegate {
 extension UserInfoVC: GFFollowerItemVCDelegate {
     func didTapGetFollowers() {
         guard user.followers != 0 else {
-            presentGFAlertOnMainThread(title: "No followers",
-                                       message: "This user has no followers.\nWhat a shame 😞.",
-                                       buttonTitle: "Wow ! 😳")
+            presentGFAlert(title: "No followers",
+                           message: "This user has no followers.\nWhat a shame 😞.",
+                           buttonTitle: "Wow ! 😳")
             return
         }
         delegate.didRequestFollowers(for: user.login)
